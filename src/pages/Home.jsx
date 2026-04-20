@@ -35,6 +35,12 @@ export default function Home() {
           <h1 className="text-[80px] leading-[85px]">
             SUPREME <br /> TO THE <br /> REAL OGS
           </h1>
+          <Link
+            to="/products"
+            className="bg-black text-[40px] text-white px-6 py-2 rounded-full cursor-pointer"
+          >
+            SHOP NOW
+          </Link>
         </motion.div>
 
         <motion.img
