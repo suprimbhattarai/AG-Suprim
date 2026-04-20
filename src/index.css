@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "tailwindcss";
+
+:root {
+  --primary: #c6ff00;
+  --dark: #0f0f0f;
+  --gray: #e5e5e5;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background: var(--gray);
+  letter-spacing: 1px;
+}
