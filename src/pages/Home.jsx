@@ -6,26 +6,40 @@ import image1 from "../assets/image1.png";
 export default function Home() {
   return (
     <div className="h-screen w-full bg-[#e5e5e5] overflow-hidden relative font-semibold">
+      {/* NAVBAR */}
       <nav className="flex justify-between items-center px-16 py-6">
+        {/* LOGO */}
         <Link to="/" className="flex flex-col items-center cursor-pointer">
-          <img src={logo} className="w-10" />
+          <img src={logo} className="w-10" alt="logo" />
           <p className="text-xs tracking-wide mt-1">SUPRIM CLOTHING</p>
         </Link>
 
-        <div className="flex items-center gap-12 text-lg">
-          <p className="cursor-pointer">HOME</p>
-          <p className="cursor-pointer">CONTACT</p>
-          <p className="cursor-pointer">ABOUT</p>
+        {/* NAV LINKS */}
+        <div className="flex items-center gap-10 text-lg">
+          <Link to="/" className="hover:opacity-70 transition">
+            HOME
+          </Link>
+
+          <Link to="/about" className="hover:opacity-70 transition">
+            ABOUT
+          </Link>
+
+          <Link to="/contact" className="hover:opacity-70 transition">
+            CONTACT
+          </Link>
+
           <Link
             to="/products"
-            className="bg-black text-white px-6 py-2 rounded-full cursor-pointer"
+            className="bg-black text-white px-6 py-2 rounded-full hover:scale-105 transition"
           >
             SHOP
           </Link>
         </div>
       </nav>
 
+      {/* MAIN SECTION */}
       <div className="flex items-center justify-between h-[80%] px-20 relative">
+        {/* LEFT TEXT */}
         <motion.div
           initial={{ x: -150, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -35,22 +49,26 @@ export default function Home() {
           <h1 className="text-[80px] leading-[85px]">
             SUPREME <br /> TO THE <br /> REAL OGS
           </h1>
+
           <Link
             to="/products"
-            className="bg-black text-[40px] text-white px-6 py-2 rounded-full cursor-pointer"
+            className="inline-block mt-6 bg-black text-white text-[40px] px-6 py-2 rounded-full hover:scale-105 transition"
           >
             SHOP NOW
           </Link>
         </motion.div>
 
+        {/* IMAGE */}
         <motion.img
           src={image1}
           initial={{ x: 150, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
           className="h-[500px] object-contain z-10"
+          alt="hero"
         />
 
+        {/* BACKGROUND SHAPES */}
         <div
           className="absolute left-0 bottom-0 w-[55%] h-[75%] z-0"
           style={{

@@ -67,9 +67,12 @@ export default function Products() {
         </div>
 
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-          <button className="bg-black text-white px-8 py-2 rounded-full cursor-pointer hover:scale-105 transition">
-            MORE
-          </button>
+          <Link
+            to="/more"
+            className="bg-black text-white px-6 py-2 rounded-full hover:scale-105 transition"
+          >
+            More
+          </Link>
         </div>
       </div>
     </div>
