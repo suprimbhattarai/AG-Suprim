@@ -2,6 +2,10 @@
 
 ## Overview
 
+<img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/82f58e8f-8b5d-4c56-b1e3-7cf9bed892ab" />
+
+<img width="1918" height="966" alt="image" src="https://github.com/user-attachments/assets/a383fb24-e343-40cf-9963-3f3cff4abdff" />
+
 This project is a modern two-page clothing website built using React and Tailwind CSS. It demonstrates UI design, animations, API integration, and deployment readiness.
 
 ## Features
